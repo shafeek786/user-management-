@@ -1,0 +1,22 @@
+/* app.component.css */
+.example-form  {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mat-form-field {
+    width: 100%;
+  }
+  
+  .custom-input {
+    border-radius: 25px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  

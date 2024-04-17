@@ -1,0 +1,19 @@
+<div class="bg-image"></div>
+
+
+<div class="wrapper sticky">
+  <nav class="navbar-fixed-top">
+    <a  class="logo">
+       User Management System
+    </a>
+    <a *ngIf="!login" routerLink="/login">Login</a>
+    <a *ngIf="login" (click)="logout()">Logout</a>
+    <a *ngIf="!login" routerLink="/register">Signup</a>
+
+    <ul>
+    </ul>
+  </nav>
+</div>
+<div class="footer" id="signup">
+  <h2>All right reserved @BTech Days</h2>
+</div>

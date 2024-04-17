@@ -1,0 +1,32 @@
+<mat-card>
+  <mat-card-header>
+      <h2>{{token?'Add User':'Registeration'}}</h2>
+  </mat-card-header>
+  <mat-card-content>
+      <form class="example-form" [formGroup]="registerForm" (ngSubmit)="proceedRegistration()">
+          
+          <mat-form-field class="example-full-width">
+              <mat-label>Name</mat-label>
+              <input matInput formControlName="name" >
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>Password</mat-label>
+              <input type="password" matInput formControlName="password" >
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>email*</mat-label>
+              <input matInput formControlName="email" >
+           
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <mat-label>Mobile Number</mat-label>
+              <input matInput formControlName="mobile" >
+            </mat-form-field>
+           
+            <div>
+              <button mat-raised-button color="primary">Submit</button>
+              <a *ngIf="!token" routerLink="/login" mat-raised-button color="accent">Back to Login</a>
+            </div>
+        </form>
+  </mat-card-content>
+</mat-card>
